@@ -1,0 +1,69 @@
+.footer {
+  background: var(--boardman-blue);
+  padding-top: 67px;
+  padding-bottom: 45px;
+
+  &__content {
+    max-width: 1040px;
+    color: #fff;
+
+    &__links {
+      display: flex;
+
+      &__about {
+        margin-right: 80px;
+
+        &__header {
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 30px;
+          margin-top: 16px;
+          margin-bottom: 8px;
+        }
+
+        &__description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          max-width: 279px;
+        }
+      }
+      &__page {
+        .title {
+          font-weight: 600;
+          line-height: 22px;
+          text-transform: uppercase;
+          margin-bottom: 22px;
+        }
+        .links {
+          .link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 16px;
+
+            a {
+              color: #fff;
+            }
+          }
+
+          :last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .company {
+        margin: 0 auto;
+      }
+    }
+
+    &__bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+  }
+}
