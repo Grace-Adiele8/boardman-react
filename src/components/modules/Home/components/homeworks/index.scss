@@ -1,0 +1,59 @@
+.home-work {
+  &:nth-child(even) {
+    .home-work__content {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 104px;
+    gap: 136px;
+
+    &__images {
+      .images {
+        width: 455px;
+      }
+      .buy {
+        margin-left: 82px;
+        padding-top: 28px;
+      }
+    }
+    &__bookings {
+      display: flex;
+      padding-top: 18px;
+    }
+    &__text {
+      margin-top: 122px;
+
+      &__header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        margin-bottom: 16px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+.home-works {
+  &__content {
+    &__heading {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      margin-top: 164px;
+    }
+
+    &__payment {
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

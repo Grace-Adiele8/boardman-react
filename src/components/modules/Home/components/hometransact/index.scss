@@ -1,0 +1,60 @@
+.home-transact {
+  background: #e5e5e5;
+  &__content {
+    &__header {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 64px;
+      padding-top: 130px;
+    }
+    &__description {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 606px;
+      margin-bottom: 48px;
+    }
+    &__transactions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 39px;
+      padding-bottom: 130px;
+    }
+  }
+}
+
+.transactions {
+  &__content {
+    padding: 34.51px 36px 23px 35px;
+    width: 364px;
+    background: #fff;
+    &__header {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 26.51px;
+    }
+    &__description {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      width: 293px;
+      margin-top: 16px;
+    }
+    &__icon {
+      width: 67px;
+      height: 67px;
+      background: rgba(7, 71, 166, 0.05);
+      box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
