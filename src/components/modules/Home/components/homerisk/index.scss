@@ -1,8 +1,9 @@
 .home-risk {
-  background-image: url("../../../assets/svg/texture.svg");
-  background-color: var(--boardman-blue);
   background-size: cover;
   background-position: center;
+  background-image: url("../../../../../assets/svg/texture.svg");
+  background-color: var(--boardman-blue);
+
   padding: 100px 0;
 
   &__content {

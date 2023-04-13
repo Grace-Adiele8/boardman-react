@@ -1,4 +1,7 @@
+import HomeClient from "./components/modules/Home/components/homeclient/HomeClient";
 import HomeHero from "./components/modules/Home/components/homehero/HomeHero";
+import HomePartners from "./components/modules/Home/components/homepartners/HomePartners";
+import HomePayment from "./components/modules/Home/components/homepayment/HomePayment";
 import HomeRisk from "./components/modules/Home/components/homerisk/HomeRisk";
 import HomeTransact from "./components/modules/Home/components/hometransact/HomeTransact";
 
@@ -15,6 +18,9 @@ function App() {
       <HomeWorks />
       <HomeRisk />
       <HomeTransact />
+      <HomePayment />
+      <HomeClient />
+      <HomePartners />
       <Footer />
     </>
   );

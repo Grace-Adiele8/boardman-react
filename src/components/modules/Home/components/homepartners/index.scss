@@ -1,0 +1,31 @@
+.home-partners {
+  padding-top: 64px;
+  padding-bottom: 59.21px;
+  background: linear-gradient(
+    0deg,
+    rgba(222, 232, 242, 0.3) 0%,
+    rgba(249, 250, 251, 0) 100%
+  );
+  margin-bottom: 130px;
+  &__content {
+    display: flex;
+    gap: 92px;
+    &__text {
+      &__header {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 64px;
+      }
+      &__description {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        width: 768px;
+      }
+    }
+    img {
+      height: 172px;
+      width: 150px;
+    }
+  }
+}
