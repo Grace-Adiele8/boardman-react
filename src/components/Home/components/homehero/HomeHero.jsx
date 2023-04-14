@@ -1,5 +1,6 @@
 import React from "react";
 import BaseButton from "../../../../ui/button/BaseButton";
+
 import arrow from "../../../../../assets/svg/right arrow.svg";
 import HomeHeroBase from "./HomeHeroBase";
 import "./index.scss";

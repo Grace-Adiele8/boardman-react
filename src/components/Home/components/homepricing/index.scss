@@ -1,0 +1,117 @@
+.home-pricing {
+  background-color: var(--boardman-blue);
+  margin-left: 45px;
+  margin-right: 45px;
+
+  &__content {
+    // height: 1387px;
+    &__text {
+      &__header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        width: 527px;
+        max-width: 526px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 24px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+        width: 517px;
+        max-width: 526px;
+        margin: 0 auto;
+        padding-bottom: 64px;
+      }
+    }
+    &__slider {
+      max-width: 570px;
+      margin: 0 auto;
+      background-color: var(--boardman-blue);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 2px 4px 130px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        flex: 1;
+        text-align: center;
+      }
+      .tab-active {
+        background: #6ae5b4;
+        border-radius: 4px;
+        padding: 10px 16px;
+        color: var(--boardman-black);
+      }
+    }
+    &__payment {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 56px;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+
+        img {
+          width: 361.20001220703125px;
+        }
+      }
+    }
+    &__seller {
+      background: linear-gradient(
+        0deg,
+        rgba(222, 232, 242, 0.2) 0%,
+        rgba(249, 250, 251, 0) 100%
+      );
+      border-radius: 16px;
+      padding: 30px 48px 40px 48px;
+      display: flex;
+      justify-content: space-between;
+
+      &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        width: 649px;
+      }
+    }
+  }
+}
+
+.pricing-table {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 1170px;
+  height: 311px;
+}
+tr {
+  display: flex;
+}
+
+th {
+  text-align: left;
+  // flex: 1;
+}
+
+td {
+  text-align: left;
+  // flex: 1;
+}
