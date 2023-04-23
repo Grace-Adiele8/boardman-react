@@ -12,7 +12,9 @@ function AboutWhy() {
             We’re your right trading advocate
           </p>
         </div>
-        <WhyCard />
+        {cards.map((card, index) => (
+          <WhyCard />
+        ))}
       </div>
     </div>
   );

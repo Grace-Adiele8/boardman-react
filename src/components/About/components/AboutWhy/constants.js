@@ -28,6 +28,7 @@ export const cards = [
   {
     icon: resolution,
     title: "Dispute Resolution",
-    description: "",
+    description:
+      "Our dispute Resolution process ensures that any disputes that may arise during the course of a transaction are treated promptly, impartially and amicably between both parties involved",
   },
 ];
