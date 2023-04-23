@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.scss";
 import PaymentCard from "./PaymentCard";
-import calendar from "../../../../../assets/svg/calendar.svg";
-import approved from "../../../../../assets/svg/approved.svg";
+import calendar from "../../../../assets/svg/calendar.svg";
+import approved from "../../../../assets/svg/approved.svg";
 
 function HomePayment() {
   return (

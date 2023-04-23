@@ -1,6 +1,5 @@
+import AboutWhy from "./components/About/components/AboutWhy/AboutWhy";
 import AboutHero from "./components/About/components/Abouthero/AboutHero";
-import HomeHero from "./components/Home/components/homehero/HomeHero";
-
 import NavBar from "./components/ui/navbar/NavBar";
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
     <>
       <NavBar />
       <AboutHero />
-      <NavBar />
-      <HomeHero />
+      <AboutWhy />
     </>
   );
 }

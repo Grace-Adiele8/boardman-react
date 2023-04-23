@@ -38,13 +38,10 @@
       }
     }
     &__image {
-      position: relative;
-
-      //   right: -184px;
-      //   height: 392px;
-      //   width: 665px;
-      //   left: 0px;
-      //   top: 0px;
+      .about-image {
+        position: relative;
+        right: -135px;
+      }
 
       &__description {
         position: absolute;
