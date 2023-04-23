@@ -1,0 +1,62 @@
+.about-hero {
+  margin-top: 116px;
+  background: #fdfdff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../../assets/images/map.png");
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      margin-top: 9px;
+
+      &__header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: var(--boardman-black);
+        max-width: 504px;
+        margin-bottom: 24px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--boardman-black);
+        max-width: 504px;
+        margin-bottom: 32px;
+      }
+      &__button {
+        padding: 13px 26px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+    &__image {
+      position: relative;
+
+      //   right: -184px;
+      //   height: 392px;
+      //   width: 665px;
+      //   left: 0px;
+      //   top: 0px;
+
+      &__description {
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        right: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 515px;
+        color: #fff;
+      }
+    }
+  }
+}

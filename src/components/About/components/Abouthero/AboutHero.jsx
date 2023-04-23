@@ -1,5 +1,8 @@
 import React from "react";
 import arrow from "../../../../assets/svg/right arrow.svg";
+import BaseButton from "../../../ui/button/BaseButton";
+import heroimage from "../../../../assets/svg/About Image.svg";
+import "./index.scss";
 
 function AboutHero() {
   return (
@@ -17,8 +20,21 @@ function AboutHero() {
             Get Started
             <span>
               <img src={arrow} alt="arrow" />
-            </span>
+            </span>{" "}
           </BaseButton>
+        </div>
+        <div className="about-hero__content__image square">
+          <div className="about-image">
+            <img src={heroimage} alt="hero image" />
+          </div>
+          <div className="about-hero__content__image__description">
+            <p className="image-description">
+              Laoreet porttitor hendrerit arcu congue nec. Ultrices sapien nisi
+              cras leo urna purus scelerisque. Viverra commodo vitae
+              pellentesque mattis imperdiet morbi orci posuere dui. Auctor sit
+              quis arcu tristique{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>

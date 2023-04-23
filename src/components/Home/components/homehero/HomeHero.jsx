@@ -1,13 +1,12 @@
 import React from "react";
-import BaseButton from "../../../../ui/button/BaseButton";
-
-import arrow from "../../../../../assets/svg/right arrow.svg";
+import BaseButton from "../../../ui/button/BaseButton";
+import arrow from "../../../../assets/svg/right arrow.svg";
 import HomeHeroBase from "./HomeHeroBase";
 import "./index.scss";
-import check from "../../../../../assets/images/shield.png";
-import parcel from "../../../../../assets/images/parcel.png";
-import country from "../../../../../assets/images/country.png";
-import arrowdown from "../../../../../assets/images/arrow-down.jpg";
+import check from "../../../../assets/svg/shield (1).svg";
+import parcel from "../../../../assets/images/parcel.png";
+import country from "../../../../assets/images/country.png";
+import arrowdown from "../../../../assets/svg/u_angle-right.svg";
 
 function HomeHero() {
   return (

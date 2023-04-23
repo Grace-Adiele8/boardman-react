@@ -26,6 +26,21 @@
   }
 }
 
+.square {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 536px;
+    width: 481px;
+    right: -48px;
+    top: -204px;
+    position: absolute;
+    z-index: -1;
+    background: var(--boardman-blue);
+  }
+}
+
 .rectangle {
   position: relative;
 
