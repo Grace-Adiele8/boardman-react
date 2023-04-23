@@ -1,6 +1,7 @@
 import React from "react";
 import WhyCard from "./WhyCard";
 import "./index.scss";
+import { cards } from "./constants";
 
 function AboutWhy() {
   return (
@@ -13,7 +14,12 @@ function AboutWhy() {
           </p>
         </div>
         {cards.map((card, index) => (
-          <WhyCard />
+          <WhyCard
+            key={index}
+            icon={card.icon}
+            title={card.title}
+            description={card.description}
+          />
         ))}
       </div>
     </div>
