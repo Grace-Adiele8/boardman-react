@@ -23,7 +23,7 @@ function AboutHero() {
             </span>{" "}
           </BaseButton>
         </div>
-        <div className="about-hero__content__image square">
+        <div className="about-hero__content__image rectangle">
           <div className="about-image">
             <img src={heroimage} alt="hero image" />
           </div>

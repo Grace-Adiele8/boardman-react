@@ -32,8 +32,47 @@
       font-size: 16px;
       line-height: 30px;
       color: var(--boardman-black);
-      width: 293px;
+      max-width: 293px;
       margin-top: 16px;
+      height: 180px;
+    }
+  }
+}
+
+.about-why {
+  background: linear-gradient(
+    360deg,
+    #dee8f2 -80.63%,
+    rgba(249, 250, 251, 0) 100%
+  );
+  margin-top: 170px;
+  height: 780px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      &__why {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #36b37e;
+        margin-bottom: 16px;
+      }
+      &__description {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--boardman-black);
+        width: 364px;
+      }
+    }
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
     }
   }
 }

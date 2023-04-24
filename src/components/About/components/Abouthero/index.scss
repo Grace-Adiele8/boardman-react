@@ -7,9 +7,20 @@
   background-image: url("../../../../assets/images/map.png");
   position: relative;
 
+  &.app-container {
+    padding-right: 0;
+
+    .app-container__section {
+      max-width: 1305px;
+      margin: 0 0 0 auto;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
+    max-width: 1305px;
+    margin-left: auto;
 
     &__text {
       margin-top: 9px;
@@ -39,10 +50,9 @@
     }
     &__image {
       .about-image {
-        position: relative;
-        right: -135px;
+        // position: relative;
+        // right: -135px;
       }
-
       &__description {
         position: absolute;
         bottom: 40px;
@@ -53,6 +63,13 @@
         line-height: 32px;
         max-width: 515px;
         color: #fff;
+      }
+    }
+
+    .rectangle {
+      &::after {
+        top: -204px;
+        right: 0;
       }
     }
   }
