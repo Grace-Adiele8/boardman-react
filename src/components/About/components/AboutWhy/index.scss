@@ -45,12 +45,13 @@
     #dee8f2 -80.63%,
     rgba(249, 250, 251, 0) 100%
   );
-  margin-top: 170px;
+
   height: 780px;
 
   &__content {
     display: flex;
     justify-content: space-between;
+    padding-top: 166px;
     &__text {
       &__why {
         font-weight: 600;

@@ -41,18 +41,8 @@
         max-width: 504px;
         margin-bottom: 32px;
       }
-      &__button {
-        padding: 13px 26px;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-      }
     }
     &__image {
-      .about-image {
-        // position: relative;
-        // right: -135px;
-      }
       &__description {
         position: absolute;
         bottom: 40px;

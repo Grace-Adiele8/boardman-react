@@ -1,26 +1,39 @@
 import React from "react";
-import suitable from "../../../../assets/svg/suitable.svg";
+import "./index.scss";
+import { benefits } from "./constants";
+import BaseButton from "../../../ui/button/BaseButton";
+import arrow from "../../../../assets/svg/right arrow.svg";
 
-function benefits() {
+function Benefits() {
   return (
-    <div className="benefits">
-      <div className="benefits-content">
-        <img src={suitable} alt="image" />
-        <div className="benefits-content__text">
-          <p className="bednefits-content__text__header">
-            Simple and inexpensive
-          </p>
-          <p>
-            With Boardman, you can either instantly invite a counterparty to a
-            transaction or simply create a payment link to request or send
-            payment securely and cost-effectively. Boardman offers maximum
-            security and an abstracted process within your control to ensure
-            that the terms of your transaction are met.
-          </p>
+    <>
+      {benefits?.map((benefit, index) => (
+        <div className="benefits" key={index}>
+          <div className="benefits__base">
+            <div className="benefits__base__content">
+              <div className="benefits__base__content__image">
+                <img src={benefit.image} alt="image" />
+              </div>
+              <div className="benefits__base__content__text">
+                <p className="benefits__base__content__text__header">
+                  {benefit.title}
+                </p>
+                <p className="benefits__base__content__text__description">
+                  {benefit.description}
+                </p>
+                <BaseButton className="base-button--primary benefits__base__content__text__button">
+                  Get Started
+                  <span>
+                    <img src={arrow} alt="arrow" />
+                  </span>{" "}
+                </BaseButton>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      ))}
+    </>
   );
 }
 
-export default benefits;
+export default Benefits;

@@ -1,9 +1,8 @@
 import simple from "../../../../assets/svg/simple.svg";
-import reduced from "../../../../assets/svg/reduced.svg";
+import reducedrisk from "../../../../assets/svg/worryless.svg";
 import protection from "../../../../assets/svg/protection.svg";
 import suitable from "../../../../assets/svg/suitable.svg";
 import trusted from "../../../../assets/svg/trusted.svg";
-import BaseButton from "../../../ui/button/BaseButton";
 
 export const benefits = [
   {
@@ -14,7 +13,7 @@ export const benefits = [
   },
 
   {
-    image: reduced,
+    image: reducedrisk,
     title: "Reduced Risk",
     description:
       "With existing payment providers, there is usually a high risk of fraud and chargebacks can be quite tiresome and take an awful long time. Boardman’s step-by-step processing reduces these risks and allows you to engage in any transaction online without worries.",

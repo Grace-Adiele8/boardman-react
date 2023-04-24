@@ -16,7 +16,7 @@ function AboutHero() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed conseq
             mi ligula, a sagittis metus interdum sit amet.{" "}
           </p>
-          <BaseButton className="about-hero__content__text__button">
+          <BaseButton className="base-button--primary">
             Get Started
             <span>
               <img src={arrow} alt="arrow" />

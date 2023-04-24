@@ -1,5 +1,5 @@
-import illustration from "../../../../../assets/images/illustration.png";
-import basket from "../../../../../assets/images/basket.png";
+import illustration from "../../../../assets/images/illustration.png";
+import basket from "../../../../assets/images/basket.png";
 
 export const risks = [
   {

@@ -65,7 +65,7 @@ function HomeHero() {
               <img src={arrowdown} alt="icon" />
             </div>
           </div>
-          <BaseButton className="home-hero__content__card__button">
+          <BaseButton className="base-button--primary">
             Create Transaction
           </BaseButton>
         </div>
