@@ -1,0 +1,83 @@
+.contact-us {
+  &__content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/map.png);
+
+    &__text {
+      &__header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: var(--boardman-black);
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--boardman-black);
+        width: 489px;
+      }
+    }
+    &__card {
+      background: #ffffff;
+      box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
+      border-radius: 16px;
+      padding: 56px;
+
+      &__form {
+        &__label {
+          p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #5a7184;
+            margin-bottom: 13px;
+          }
+
+          input {
+            background: #ffffff;
+            border: 1px solid #dfe3ef;
+            border-radius: 8px;
+            width: 100%;
+            padding: 17px 0px 18px 20px;
+            margin-bottom: 32px;
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 21px;
+              color: var(--boardman-black);
+            }
+          }
+
+          textarea {
+            padding: 17px 0 0 20px;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #dfe3ef;
+            border-radius: 8px;
+            height: 137px;
+            margin-bottom: 48px;
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 21px;
+              color: var(--boardman-black);
+            }
+          }
+        }
+        &__button {
+          width: 232px;
+
+          span {
+            height: 10.5px;
+            width: 14px;
+          }
+        }
+      }
+    }
+  }
+}

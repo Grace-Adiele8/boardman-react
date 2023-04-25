@@ -1,5 +1,4 @@
 .base-button {
-  padding: 13px 38px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
@@ -28,5 +27,6 @@
     @extend .base-button;
     background: #f3f5f9;
     border: 0.5px solid #e0e1e2;
+    padding: 13px 38px;
   }
 }
