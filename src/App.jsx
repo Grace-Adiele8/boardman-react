@@ -1,6 +1,6 @@
-import AboutBenefits from "./components/About/components/AboutBenefits/AboutBenefits";
-import AboutWhy from "./components/About/components/AboutWhy/AboutWhy";
-import AboutHero from "./components/About/components/Abouthero/AboutHero";
+import ApiAbout from "./components/Api/ApiAbout";
+import ApiHero from "./components/Api/ApiHero";
+import Footer from "./components/ui/footer/Footer";
 
 import NavBar from "./components/ui/navbar/NavBar";
 
@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <AboutHero />
-      <AboutWhy />
-      <AboutBenefits />
+      <ApiHero />
+      <ApiAbout />
+      <Footer />
     </>
   );
 }
