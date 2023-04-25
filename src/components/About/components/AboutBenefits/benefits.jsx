@@ -21,12 +21,14 @@ function Benefits() {
                 <p className="benefits__base__content__text__description">
                   {benefit.description}
                 </p>
-                <BaseButton className="base-button--primary benefits__base__content__text__button">
-                  Get Started
-                  <span>
-                    <img src={arrow} alt="arrow" />
-                  </span>{" "}
-                </BaseButton>
+                <div className="benefits__base__content__text__button">
+                  <BaseButton className="base-button--primary ">
+                    Get Started
+                    <span>
+                      <img src={arrow} alt="arrow" />
+                    </span>{" "}
+                  </BaseButton>
+                </div>
               </div>
             </div>
           </div>
