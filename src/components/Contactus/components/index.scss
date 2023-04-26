@@ -5,77 +5,132 @@
     background-repeat: no-repeat;
     background-image: url(../../../assets/images/map.png);
 
-    &__text {
-      &__header {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        color: var(--boardman-black);
-      }
-      &__description {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        color: var(--boardman-black);
-        width: 489px;
+    &__help {
+      padding-bottom: 64px;
+      padding-top: 156px;
+      &__text {
+        &__header {
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 64px;
+          color: var(--boardman-black);
+        }
+        &__description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: var(--boardman-black);
+          width: 489px;
+        }
       }
     }
-    &__card {
-      background: #ffffff;
-      box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
-      border-radius: 16px;
-      padding: 56px;
 
-      &__form {
-        &__label {
-          p {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 21px;
-            color: #5a7184;
-            margin-bottom: 13px;
-          }
+    &__contact {
+      position: relative;
+      background-color: var(--boardman-blue);
+      display: flex;
+      justify-content: space-between;
 
-          input {
-            background: #ffffff;
-            border: 1px solid #dfe3ef;
-            border-radius: 8px;
-            width: 100%;
-            padding: 17px 0px 18px 20px;
-            margin-bottom: 32px;
+      &__info {
+        display: flex;
+        gap: 70px;
+        mix-blend-mode: normal;
+        border-radius: 10px;
+        margin: 16px;
+        width: 53%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/svg/location.svg);
+        position: relative;
+        z-index: -1;
 
-            &::placeholder {
-              font-weight: 600;
+        &__background {
+          background-color: linear-gradient(
+            2.88deg,
+            #132848 2.49%,
+            rgba(54, 54, 83, 0) 97.71%
+          );
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          max-width: 208px;
+          color: #ffffff;
+        }
+        .contact-info {
+          text-decoration-line: underline;
+        }
+      }
+      &__card {
+        background: #ffffff;
+        box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
+        border-radius: 16px;
+        padding: 56px;
+        position: absolute;
+        width: 513px;
+        right: 135px;
+        bottom: -130px;
+
+        &__form {
+          &__label {
+            p {
+              font-weight: 500;
               font-size: 16px;
               line-height: 21px;
-              color: var(--boardman-black);
+              color: #5a7184;
+              margin-bottom: 13px;
+            }
+
+            input {
+              background: #ffffff;
+              border: 1px solid #dfe3ef;
+              border-radius: 8px;
+              width: 100%;
+              padding: 17px 0px 18px 20px;
+              margin-bottom: 32px;
+
+              &::placeholder {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+                color: var(--boardman-black);
+              }
+            }
+
+            textarea {
+              padding: 17px 0 0 20px;
+              width: 100%;
+              background: #ffffff;
+              border: 1px solid #dfe3ef;
+              border-radius: 8px;
+              height: 137px;
+              margin-bottom: 48px;
+
+              &::placeholder {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+                color: var(--boardman-black);
+              }
             }
           }
+          &__button {
+            width: 232px;
 
-          textarea {
-            padding: 17px 0 0 20px;
-            width: 100%;
-            background: #ffffff;
-            border: 1px solid #dfe3ef;
-            border-radius: 8px;
-            height: 137px;
-            margin-bottom: 48px;
-
-            &::placeholder {
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 21px;
-              color: var(--boardman-black);
+            span {
+              height: 10.5px;
+              width: 14px;
             }
           }
         }
-        &__button {
-          width: 232px;
-
-          span {
-            height: 10.5px;
-            width: 14px;
-          }
+      }
+      &__socials {
+        .contact-socials {
+          flex-direction: column;
+          padding: 47px;
+          gap: 32px;
         }
       }
     }
