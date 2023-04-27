@@ -2,6 +2,7 @@ import React from "react";
 import BaseButton from "../button/BaseButton";
 import "./index.scss";
 import Logo from "../logo/Logo";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -11,13 +12,13 @@ function NavBar() {
           <Logo />
           <ul className="nav-links">
             <li>
-              <a href="">About</a>
+              <Link to="/About">About</Link>
             </li>
             <li>
-              <a href="">Escrow API</a>
+              <Link to="/API">Escrow API</Link>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <Link to="/Contactus">Contact Us</Link>
             </li>
             <li>
               <a href="">Fees</a>
