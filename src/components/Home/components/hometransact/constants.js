@@ -1,9 +1,9 @@
-import luxury from "../../../../../assets/svg/Luxury.svg";
-import secondhand from "../../../../../assets/svg/Second hand.svg";
-import cart from "../../../../../assets/svg/cart.svg";
-import services from "../../.././../../assets/svg/Services.svg";
-import digital from "../../../../../assets/svg/home_1_isometric.svg";
-import deposits from "../../../../../assets/svg/deposit.svg";
+import luxury from "../../../../assets/svg/Luxury.svg";
+import secondhand from "../../../../assets/svg/Second hand.svg";
+import cart from "../../../../assets/svg/cart.svg";
+import services from "../../../../assets/svg/Services.svg";
+import digital from "../../../../assets/svg/home_1_isometric.svg";
+import deposits from "../../../../assets/svg/deposit.svg";
 
 export const transactions = [
   {

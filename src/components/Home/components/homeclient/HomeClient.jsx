@@ -1,7 +1,7 @@
 import React from "react";
-import ratings from "../../../../../assets/svg/star.svg";
-import man from "../../../../../assets/images/man.png";
-import airbnb from "../../../../../assets/svg/airbnb.svg";
+import ratings from "../../../../assets/svg/star.svg";
+import man from "../../../../assets/images/man.png";
+import airbnb from "../../../../assets/svg/airbnb.svg";
 
 import "./index.scss";
 

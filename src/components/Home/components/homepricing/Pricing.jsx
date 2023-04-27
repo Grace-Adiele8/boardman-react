@@ -1,6 +1,6 @@
 import React from "react";
 import ReactTable from "react-table";
-import nigerianflag from "../../../../../assets/svg/nigerianflag.svg";
+import nigerianflag from "../../../../assets/svg/nigerianflag.svg";
 
 function Pricing() {
   return (

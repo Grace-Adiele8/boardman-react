@@ -1,11 +1,9 @@
-import ContactUs from "./components/Contactus/components/ContactUs";
-import NavBar from "./components/ui/navbar/NavBar";
+import Contact from "./components/Contactus/pages/Contact";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <ContactUs />
+      <Contact />
     </>
   );
 }

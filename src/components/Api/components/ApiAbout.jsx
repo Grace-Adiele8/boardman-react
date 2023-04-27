@@ -1,6 +1,6 @@
 import React from "react";
-import developer from "../../assets/svg/developer.svg";
-import protecting from "../../assets/svg/protecting.svg";
+import developer from "../../../assets/svg/developer.svg";
+import protecting from "../../../assets/svg/protecting.svg";
 import "./index.scss";
 
 function ApiAbout() {

@@ -1,8 +1,7 @@
 import React from "react";
-import comingsoon from "../../assets/svg/coming soon.svg";
-import laptop from "../../assets/svg/laptop.svg";
+import comingsoon from "../../../assets/svg/coming soon.svg";
+import laptop from "../../../assets/svg/laptop.svg";
 import "./index.scss";
-import ApiAbout from "./ApiAbout";
 
 function ApiHero() {
   return (

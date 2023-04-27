@@ -3,6 +3,7 @@ import "./index.scss";
 import BaseButton from "../../ui/button/BaseButton";
 import message from "../../../assets/svg/message.svg";
 import Socials from "../../ui/socials/Socials";
+import location from "../../../assets/svg/location.svg";
 
 function ContactUs() {
   return (
@@ -22,6 +23,9 @@ function ContactUs() {
         <div className="contact-us__content__contact">
           <div className="contact-us__content__contact__info">
             <div className="contact-us__content__info__background"></div>
+            <div className="contact-us__content__info__image">
+              <img src={location} alt="location" />
+            </div>
             <p>Suite 406, Nawa Complex, Jahi, F.C.T, Abuja</p>
             <p>+234 814 600 7319</p>
             <p className="contact-info">support@boardmanapp.com</p>

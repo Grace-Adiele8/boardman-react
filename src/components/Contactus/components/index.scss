@@ -38,20 +38,18 @@
         border-radius: 10px;
         margin: 16px;
         width: 53%;
+        background: linear-gradient(
+          2.88deg,
+          #132848 2.49%,
+          rgba(54, 54, 83, 0) 97.71%
+        );
+        mix-blend-mode: normal;
+        border-radius: 10px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(../../../assets/svg/location.svg);
-        position: relative;
-        z-index: -1;
 
-        &__background {
-          background-color: linear-gradient(
-            2.88deg,
-            #132848 2.49%,
-            rgba(54, 54, 83, 0) 97.71%
-          );
-        }
         p {
           font-weight: 400;
           font-size: 16px;

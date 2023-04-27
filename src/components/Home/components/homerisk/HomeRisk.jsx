@@ -1,6 +1,5 @@
 import React from "react";
 import Risk from "./Risk";
-// import { risks } from "./constants";
 import "./index.scss";
 
 function HomeRisk() {
@@ -15,14 +14,6 @@ function HomeRisk() {
 
         <div className="home-risk__content__risk">
           <Risk />
-          {/* {risks.map((risk, index) => (
-            <Risk
-              key={index}
-              image1={risk.image}
-              header={risk.header}
-              description={risk.description}
-            />
-          ))} */}
         </div>
       </div>
     </div>

@@ -1,9 +1,8 @@
 import React from "react";
 import "./index.scss";
-import paymentmode from "../../../../../assets/svg/paymentmethods.svg";
-
-import arrow from "../../../../../assets/svg/right arrow.svg";
-import BaseButton from "../../../../ui/button/BaseButton";
+import paymentmode from "../../../../assets/svg/paymentmethods.svg";
+import arrow from "../../../../assets/svg/right arrow.svg";
+import BaseButton from "../../../ui/button/BaseButton";
 import Pricing from "./pricing";
 
 function HomePricing() {

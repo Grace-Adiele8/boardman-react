@@ -1,5 +1,5 @@
 import React from "react";
-import shield1 from "../../../../../assets/images/shield (2).png";
+import shield1 from "../../../../assets/images/shield2.png";
 import "./index.scss";
 
 function HomePartners() {

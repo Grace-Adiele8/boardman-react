@@ -1,10 +1,10 @@
-import create1 from "../../../../../assets/images/create1.png";
-import create2 from "../../../../../assets/images/create2.png";
-import buy1 from "../../../../../assets/images/buy1.png";
-import buy2 from "../../../../../assets/images/buy2.png";
-import sell1 from "../../../../../assets/images/sell1.png";
-import seller2 from "../../../../../assets/images/seller2.png";
-import seller3 from "../../../../../assets/images/seller3.png";
+import create1 from "../../../../assets/images/create1.png";
+import create2 from "../../../../assets/images/create2.png";
+import buy1 from "../../../../assets/images/buy1.png";
+import buy2 from "../../../../assets/images/buy2.png";
+import sell1 from "../../../../assets/images/sell1.png";
+import seller2 from "../../../../assets/images/seller2.png";
+import seller3 from "../../../../assets/images/seller3.png";
 
 export const steps = [
   {

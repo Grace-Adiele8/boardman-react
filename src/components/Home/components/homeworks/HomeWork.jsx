@@ -1,6 +1,6 @@
 import React from "react";
-import bookings from "../../../../../assets/svg/bookings.svg";
-import curvedarrow from "../../../../../assets/svg/curvedarrow.svg";
+import bookings from "../../../../assets/svg/bookings.svg";
+import curvedarrow from "../../../../assets/svg/curvedarrow.svg";
 import "./index.scss";
 
 function HomeWork({ image1, image2, header, description }) {

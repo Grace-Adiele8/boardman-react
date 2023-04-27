@@ -1,7 +1,6 @@
 import React from "react";
 import tick from "../../../../assets/svg/tick.svg";
 import { risks } from "./constants";
-import BaseButton from "../../../ui/button/BaseButton";
 
 function Risk() {
   return (
