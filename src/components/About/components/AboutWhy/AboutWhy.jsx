@@ -13,6 +13,7 @@ function AboutWhy() {
             We’re your right trading advocate
           </p>
         </div>
+
         <div className="about-why__content__card">
           {cards.map((card, index) => (
             <WhyCard

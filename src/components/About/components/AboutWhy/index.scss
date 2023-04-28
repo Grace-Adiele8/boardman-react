@@ -1,9 +1,11 @@
+@import "../../../../styles/common/mixins";
+
 .why-card {
   &__content {
     padding: 34.51px 36px 26px 34.51px;
     background: #ffffff;
     border-radius: 16px;
-    width: 364px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.04);
 
     &__icon {
       background: rgba(7, 71, 166, 0.05);
@@ -40,18 +42,45 @@
 }
 
 .about-why {
-  background: linear-gradient(
-    360deg,
-    #dee8f2 -80.63%,
-    rgba(249, 250, 251, 0) 100%
-  );
+  position: relative;
 
-  height: 780px;
+  @include mobile(700px) {
+    margin-top: 100px;
+  }
+
+  &::after {
+    content: "";
+    background: linear-gradient(
+      360deg,
+      #dee8f2 -80.63%,
+      rgba(249, 250, 251, 0) 100%
+    );
+    position: absolute;
+    height: 780px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mobile(700px) {
+      height: 1613px;
+    }
+  }
 
   &__content {
+    padding-top: 166px;
     display: flex;
     justify-content: space-between;
-    padding-top: 166px;
+
+    @include mobile(700px) {
+      padding-top: 56px;
+    }
+
+    @include mobile(1067px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+
     &__text {
       &__why {
         font-weight: 600;
@@ -62,18 +91,24 @@
         color: #36b37e;
         margin-bottom: 16px;
       }
+
       &__description {
         font-weight: 700;
         font-size: 36px;
         line-height: 48px;
         color: var(--boardman-black);
-        width: 364px;
+        max-width: 364px;
       }
     }
     &__card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
+
+      @include mobile(700px) {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+      }
     }
   }
 }

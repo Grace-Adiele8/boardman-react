@@ -11,8 +11,8 @@ import arrowdown from "../../../../assets/svg/u_angle-right.svg";
 function HomeHero() {
   return (
     <div className="home-hero app-container hero">
-      <div className="home-hero__content app-container__section">
-        <div className="home-hero__content__text">
+      <div className="home-hero__content app-container__section ">
+        <div className="home-hero__content__text  ">
           <h1 className="hero-header">
             Protect your payments with a fully digital escrow{" "}
           </h1>

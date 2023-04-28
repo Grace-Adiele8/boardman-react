@@ -1,3 +1,5 @@
+@import "../../../styles/common/mixins";
+
 .api-hero {
   margin-top: 45px;
 
@@ -6,6 +8,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../../../assets/svg/Map.svg");
+
+    // @include mobile(782px) {
+    //   display: grid;
+    //   flex-direction: column;
+    // }
+
     &__text {
       max-width: 938px;
       margin: 0 auto;

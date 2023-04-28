@@ -1,9 +1,16 @@
+@import "../../../../styles/common/mixins";
+
 .home-work {
   margin-bottom: 44.73px;
+  display: flex;
   &:nth-child(even) {
     .home-work__content {
       flex-direction: row-reverse;
     }
+  }
+
+  @include mobile(608px) {
+    flex-direction: column;
   }
 
   &__content {
@@ -37,6 +44,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
+        width: 497px;
       }
     }
   }

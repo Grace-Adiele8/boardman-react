@@ -1,6 +1,13 @@
+@import "../../styles/common/mixins";
+
 .app-container {
   padding-left: 50px;
   padding-right: 50px;
+
+  @include mobile(968px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &__section {
     max-width: 1170px;

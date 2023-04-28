@@ -1,3 +1,5 @@
+@import "../../../../styles/common/mixins";
+
 .about-hero {
   margin-top: 116px;
   background: #fdfdff;
@@ -22,6 +24,9 @@
     max-width: 1305px;
     margin-left: auto;
 
+    @include mobile(1097px) {
+      flex-direction: column;
+    }
     &__text {
       margin-top: 9px;
 
