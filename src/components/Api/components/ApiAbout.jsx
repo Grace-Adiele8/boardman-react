@@ -7,7 +7,7 @@ function ApiAbout() {
   return (
     <div className="api-about app-container">
       <div className="api-about__content app-container__section">
-        <div className="api-about__content__card">
+        <div className="api-about__content__card  content-card">
           <div className="api-about__content__card__text">
             <p className="api-about__content__card__text__header">
               Built for developers, by developers
@@ -22,7 +22,7 @@ function ApiAbout() {
             <img src={developer} alt="image" />
           </div>
         </div>
-        <div className="api-about__content__card">
+        <div className="api-about__content__card  content">
           <div className="api-about__content__card__text">
             <p className="api-about__content__card__text__header">
               Protecting both buyers and sellers

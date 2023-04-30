@@ -1,3 +1,5 @@
+@import "../../../styles/common/mixins";
+
 .footer {
   background: var(--boardman-blue);
   padding-top: 67px;
@@ -6,12 +8,26 @@
   &__content {
     max-width: 1040px;
     color: #fff;
+    margin: 0 auto;
 
     &__links {
       display: flex;
+      flex-wrap: wrap;
+
+      @include mobile(695px) {
+        gap: 56px;
+      }
+
+      @include mobile(471px) {
+        flex-direction: column;
+      }
 
       &__about {
         margin-right: 80px;
+
+        @include mobile(895px) {
+          margin-right: 0;
+        }
 
         &__header {
           font-weight: 600;
@@ -26,6 +42,7 @@
           font-size: 14px;
           line-height: 24px;
           max-width: 279px;
+          color: rgba(255, 255, 255, 0.8);
         }
       }
       &__page {
@@ -43,7 +60,10 @@
             margin-bottom: 16px;
 
             a {
-              color: #fff;
+              color: rgba(255, 255, 255, 0.8);
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
             }
           }
 
@@ -54,6 +74,10 @@
       }
       .company {
         margin: 0 auto;
+
+        @include mobile(695px) {
+          margin: 0;
+        }
       }
     }
 
@@ -64,6 +88,12 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 40px;
+
+      @include mobile(626px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
     }
   }
 }

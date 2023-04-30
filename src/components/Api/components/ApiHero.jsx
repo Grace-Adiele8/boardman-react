@@ -8,7 +8,7 @@ function ApiHero() {
     <div className="api-hero">
       <div className="api-hero__content">
         <div className="api-hero__content__text">
-          <p className="api-hero__content__text__description">
+          <p className="api-hero__content__text__description app-container">
             Enable escrow payments on your website, market place, classified
             site, shopping cart or mobile apps.
           </p>
@@ -17,7 +17,7 @@ function ApiHero() {
           </div>
         </div>
         <div className="api-hero__content__network">
-          <div className="api-hero__content__network__image">
+          <div className="api-hero__content__network__image app-container">
             <img src={laptop} alt="image" />
           </div>
           <div className="api-hero__content__network__background"></div>

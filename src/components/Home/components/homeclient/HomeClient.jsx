@@ -9,7 +9,9 @@ function HomeClient() {
   return (
     <div className="home-client app-container">
       <div className="home-client__content app-container__section">
-        <img src={man} alt="client" />
+        <div className="home-client__content__image">
+          <img src={man} alt="client" />
+        </div>
         <div className="home-client__content__text">
           <h2 className="home-client__content__text__header">
             Clients Testimonials

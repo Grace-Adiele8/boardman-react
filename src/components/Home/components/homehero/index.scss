@@ -12,6 +12,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../../../assets/images/map.png");
+  overflow-x: clip;
+
+  @include mobile(1080px) {
+    background: none;
+  }
 
   &::after {
     content: "";
@@ -33,6 +38,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include mobile(1080px) {
+      flex-direction: column;
+      gap: 216px;
+    }
+
+    .rectangle {
+      &::after {
+        left: 135px;
+
+        @include mobile(1080px) {
+          top: -158px;
+        }
+      }
+    }
+
     &__text {
       margin-top: 45px;
       &__header {
@@ -40,6 +60,11 @@
         font-size: 48px;
         line-height: 64px;
         max-width: 504px;
+
+        @include mobile(612px) {
+          font-size: 32px;
+          line-height: 40px;
+        }
       }
       &__description {
         font-weight: 400;
@@ -47,6 +72,10 @@
         line-height: 32px;
         max-width: 504px;
         margin-bottom: 32px;
+
+        @include mobile(612px) {
+          font-size: 16px;
+        }
       }
 
       &__base {
@@ -54,6 +83,11 @@
         gap: 72px;
         padding-top: 54px;
         padding-bottom: 42px;
+
+        @include mobile(612px) {
+          flex-direction: column;
+          gap: 56px;
+        }
       }
     }
 
@@ -65,6 +99,13 @@
       height: fit-content;
       box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
       border-radius: 16px;
+
+      @include mobile(1080px) {
+        margin-left: auto;
+        margin-bottom: 44px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
 
       &__text {
         font-weight: 500;
@@ -144,7 +185,7 @@
         }
       }
 
-      &__button {
+      .card-button {
         width: 100%;
         margin-top: 40px;
       }

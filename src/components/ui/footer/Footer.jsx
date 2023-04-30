@@ -6,7 +6,7 @@ import Socials from "../socials/Socials";
 function Footer() {
   return (
     <div className="footer app-container">
-      <div className="footer__content app-container__section">
+      <div className="footer__content">
         <div className="footer__content__links">
           {" "}
           <div className="footer__content__links__about">

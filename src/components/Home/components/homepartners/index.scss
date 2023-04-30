@@ -1,3 +1,5 @@
+@import "../../../../styles/common/mixins";
+
 .home-partners {
   padding-top: 64px;
   padding-bottom: 59.21px;
@@ -9,18 +11,31 @@
   margin-bottom: 130px;
   &__content {
     display: flex;
-    gap: 92px;
+    justify-content: space-between;
+
+    @include mobile(997px) {
+      flex-direction: column;
+    }
     &__text {
       &__header {
         font-weight: 700;
         font-size: 32px;
         line-height: 64px;
+
+        @include mobile(997px) {
+          margin-bottom: 16px;
+          line-height: 32px;
+        }
       }
       &__description {
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
-        width: 768px;
+        max-width: 768px;
+
+        @include mobile(997px) {
+          margin-bottom: 48px;
+        }
       }
     }
     img {

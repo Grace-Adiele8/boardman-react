@@ -5,9 +5,11 @@ import { steps } from "./constant";
 
 function HomeWorks() {
   return (
-    <div className="home-works app-container ">
-      <div className="home-works__content app-container__section">
-        <h2 className="home-works__content__heading">How it works</h2>
+    <div className="home-works">
+      <div className="home-works__content">
+        <div className="home-works__content__text  app-container">
+          <h2 className="home-works__content__text__heading">How it works</h2>
+        </div>
         <div className="home-works__content__payment">
           {steps.map((step, index) => (
             <HomeWork

@@ -16,7 +16,7 @@
 }
 
 .tab-slider {
-  box-shadow: 2px 4px 130px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 4px 130px rgba(94, 78, 78, 0.05);
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
@@ -40,11 +40,12 @@
     content: "";
     height: 536px;
     width: 481px;
-    right: -135px;
+    right: 0;
     top: -204px;
     position: absolute;
     z-index: -1;
     background: var(--boardman-blue);
+    left: 135px;
   }
 }
 
@@ -55,17 +56,13 @@
     content: "";
     height: 536px;
     width: 481px;
-    right: -135px;
     top: -168px;
     position: absolute;
     z-index: -1;
     background: var(--boardman-blue);
+    right: 0;
   }
 }
-
-// .hero {
-//   // background-image: url("../../assets/images/map.png");
-// }
 
 .hero-header {
   font-weight: 700;

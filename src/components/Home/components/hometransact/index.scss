@@ -1,3 +1,5 @@
+@import "../../../../styles/common/mixins";
+
 .home-transact {
   &__content {
     &__header {
@@ -12,49 +14,62 @@
       line-height: 30px;
       max-width: 606px;
       margin-bottom: 48px;
+
+      @include mobile(962px) {
+        font-size: 16px;
+      }
     }
     &__transactions {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 39px;
       padding-bottom: 130px;
+
+      @include mobile(962px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile(641px) {
+        grid-template-columns: 1fr;
+        width: fit-content;
+      }
     }
   }
 }
 
-.transactions {
-  &__content {
-    padding: 34.51px 36px 23px 35px;
-    width: 364px;
-    background: #fff;
-    border-radius: 16px;
-    &__header {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 30px;
-      margin-top: 26.51px;
-    }
-    &__description {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 30px;
-      width: 293px;
-      margin-top: 16px;
-    }
-    &__icon {
-      width: 67px;
-      height: 67px;
-      background: rgba(7, 71, 166, 0.05);
-      box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.04);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
+.transactions-content {
+  padding: 32px 32px 23px 32px;
 
-      img {
-        width: 40px;
-        height: 40px;
-      }
+  background: #fff;
+  border-radius: 16px;
+
+  &__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 26.51px;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 293px;
+    width: fit-content;
+  }
+  &__icon {
+    width: 67px;
+    height: 67px;
+    background: rgba(7, 71, 166, 0.05);
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    img {
+      width: 40px;
+      height: 40px;
     }
   }
 }

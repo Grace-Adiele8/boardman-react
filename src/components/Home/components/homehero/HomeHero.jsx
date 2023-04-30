@@ -13,10 +13,10 @@ function HomeHero() {
     <div className="home-hero app-container hero">
       <div className="home-hero__content app-container__section ">
         <div className="home-hero__content__text  ">
-          <h1 className="hero-header">
+          <h1 className="home-hero__content__text__header">
             Protect your payments with a fully digital escrow{" "}
           </h1>
-          <p className="hero-description">
+          <p className="home-hero__content__text__description">
             Boardman helps buyers and sellers engage in business that requires
             payments without the risks of chargebacks
           </p>
@@ -65,9 +65,7 @@ function HomeHero() {
               <img src={arrowdown} alt="icon" />
             </div>
           </div>
-          <BaseButton className="base-button--primary">
-            Create Transaction
-          </BaseButton>
+          <BaseButton className="card-button">Create Transaction</BaseButton>
         </div>
       </div>
     </div>

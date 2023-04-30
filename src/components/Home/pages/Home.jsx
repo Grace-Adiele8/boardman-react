@@ -5,7 +5,7 @@ import HomePayment from "../components/homepayment/HomePayment";
 import HomeRisk from "../components/homerisk/HomeRisk";
 import HomeTransact from "../components/hometransact/HomeTransact";
 import HomePartners from "../components/homepartners/HomePartners";
-import HomePricing from "../components/homepricing/HomePricing";
+// import HomePricing from "../components/homepricing/HomePricing";
 import HomeWorks from "../components/homeworks/HomeWorks";
 import HomeClient from "../components/homeclient/HomeClient";
 
@@ -20,7 +20,7 @@ function Home() {
         <HomePayment />
         <HomeClient />
         <HomePartners />
-        <HomePricing />
+        {/* <HomePricing /> */}
       </DefaultLayout>
     </div>
   );

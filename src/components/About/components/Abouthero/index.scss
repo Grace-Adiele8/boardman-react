@@ -24,7 +24,7 @@
     max-width: 1305px;
     margin-left: auto;
 
-    @include mobile(1097px) {
+    @include mobile(1117px) {
       flex-direction: column;
     }
     &__text {
@@ -48,7 +48,8 @@
       }
     }
     &__image {
-      &__description {
+      position: relative;
+      .image-description {
         position: absolute;
         bottom: 40px;
         left: 50px;
