@@ -30,6 +30,7 @@
       background-color: var(--boardman-blue);
       display: flex;
       justify-content: space-between;
+      margin-bottom: 267px;
 
       &__info {
         display: flex;
@@ -45,10 +46,7 @@
         );
         mix-blend-mode: normal;
         border-radius: 10px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(../../../assets/svg/location.svg);
+        padding-top: 268px;
 
         p {
           font-weight: 400;
@@ -69,7 +67,10 @@
         position: absolute;
         width: 513px;
         right: 135px;
-        bottom: -130px;
+
+        z-index: 1;
+        top: 84px;
+        margin-top: 84px;
 
         &__form {
           &__label {

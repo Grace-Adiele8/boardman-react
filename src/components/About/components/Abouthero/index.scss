@@ -26,6 +26,7 @@
 
     @include mobile(1117px) {
       flex-direction: column;
+      gap: 311px;
     }
     &__text {
       margin-top: 9px;
@@ -48,6 +49,7 @@
       }
     }
     &__image {
+      max-width: 617px;
       position: relative;
       .image-description {
         position: absolute;
@@ -60,12 +62,24 @@
         max-width: 515px;
         color: #fff;
       }
+
+      img {
+        width: 100%;
+      }
+
+      @include mobile(1117px) {
+        margin-left: auto;
+      }
     }
 
     .rectangle {
       &::after {
         top: -204px;
         right: 0;
+
+        @include mobile(1117px) {
+          top: -181px;
+        }
       }
     }
   }

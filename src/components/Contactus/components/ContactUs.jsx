@@ -19,17 +19,6 @@ function ContactUs() {
               products. We will try to provide an answer within a few days.
             </p>
           </div>
-        </div>
-        <div className="contact-us__content__contact">
-          <div className="contact-us__content__contact__info">
-            <div className="contact-us__content__info__background"></div>
-            <div className="contact-us__content__info__image">
-              <img src={location} alt="location" />
-            </div>
-            <p>Suite 406, Nawa Complex, Jahi, F.C.T, Abuja</p>
-            <p>+234 814 600 7319</p>
-            <p className="contact-info">support@boardmanapp.com</p>
-          </div>
           <div className="contact-us__content__contact__card">
             <form className="contact-us__content__contact__card__form">
               <label className="contact-us__content__contact__card__form__label">
@@ -59,6 +48,16 @@ function ContactUs() {
               </BaseButton>
             </form>
           </div>
+        </div>
+        <div className="contact-us__content__contact">
+          <div className="contact-us__content__contact__info">
+            <div className="contact-us__content__info__background"></div>
+
+            <p>Suite 406, Nawa Complex, Jahi, F.C.T, Abuja</p>
+            <p>+234 814 600 7319</p>
+            <p className="contact-info">support@boardmanapp.com</p>
+          </div>
+
           <div className="contact-us__content__contact__socials">
             <Socials className="contact-socials" />
           </div>
