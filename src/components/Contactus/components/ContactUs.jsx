@@ -50,14 +50,13 @@ function ContactUs() {
           </div>
         </div>
         <div className="contact-us__content__contact">
-          <div className="contact-us__content__contact__info">
-            <div className="contact-us__content__info__background"></div>
-
-            <p>Suite 406, Nawa Complex, Jahi, F.C.T, Abuja</p>
-            <p>+234 814 600 7319</p>
-            <p className="contact-info">support@boardmanapp.com</p>
+          <div className="contact-us__content__contact__background">
+            <div className="contact-us__content__contact__info">
+              <p>Suite 406, Nawa Complex, Jahi, F.C.T, Abuja</p>
+              <p>+234 814 600 7319</p>
+              <p className="contact-info">support@boardmanapp.com</p>
+            </div>
           </div>
-
           <div className="contact-us__content__contact__socials">
             <Socials className="contact-socials" />
           </div>

@@ -1,3 +1,5 @@
+@import "../../../styles/common/mixins";
+
 .contact-us {
   &__content {
     background-size: cover;
@@ -20,7 +22,12 @@
           font-size: 18px;
           line-height: 32px;
           color: var(--boardman-black);
-          width: 489px;
+          max-width: 489px;
+
+          @include mobile(600px) {
+            font-size: 16px;
+            line-height: 30px;
+          }
         }
       }
     }
@@ -30,23 +37,40 @@
       background-color: var(--boardman-blue);
       display: flex;
       justify-content: space-between;
-      margin-bottom: 267px;
+      margin-bottom: 187px;
 
-      &__info {
-        display: flex;
-        gap: 70px;
-        mix-blend-mode: normal;
-        border-radius: 10px;
-        margin: 16px;
-        width: 53%;
+      &__background {
         background: linear-gradient(
           2.88deg,
           #132848 2.49%,
           rgba(54, 54, 83, 0) 97.71%
         );
+        width: 53%;
         mix-blend-mode: normal;
         border-radius: 10px;
-        padding-top: 268px;
+        padding: 32px;
+        margin: 16px;
+
+        @include mobile(1395px) {
+          width: 100%;
+        }
+      }
+
+      &__info {
+        display: flex;
+        border-radius: 10px;
+        mix-blend-mode: normal;
+        margin-top: auto;
+        align-items: flex-end;
+        height: 268px;
+        gap: 70px;
+
+        @include mobile(765px) {
+          flex-direction: column;
+          justify-content: end;
+          align-items: flex-start;
+          gap: 24px;
+        }
 
         p {
           font-weight: 400;
@@ -67,10 +91,13 @@
         position: absolute;
         width: 513px;
         right: 135px;
-
         z-index: 1;
-        top: 84px;
-        margin-top: 84px;
+        top: 152px;
+
+        @include mobile(1395px) {
+          position: unset;
+          width: 100%;
+        }
 
         &__form {
           &__label {
@@ -130,6 +157,10 @@
           flex-direction: column;
           padding: 47px;
           gap: 32px;
+
+          @include mobile(815px) {
+            display: none;
+          }
         }
       }
     }
