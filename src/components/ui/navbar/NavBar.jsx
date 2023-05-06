@@ -3,7 +3,6 @@ import BaseButton from "../button/BaseButton";
 import "./index.scss";
 import Logo from "../logo/Logo";
 import { Link } from "react-router-dom";
-// import menu from "../../../assets/svg/Menu.svg";
 
 function NavBar() {
   const [nav, setNav] = useState(false);
