@@ -1,41 +1,48 @@
-// import React from "react";
-// import ReactTable from "react-table";
-// import nigerianflag from "../../../../assets/svg/nigerianflag.svg";
+import React from "react";
+import "./index.scss";
+import { prices } from "./constant";
 
-// function Pricing() {
-//   return (
-//     <div className="pricing">
-//       <h2>
-//         {" "}
-//         <span>
-//           {" "}
-//           <img src={nigerianflag} alt="icon" /> Payments
-//         </span>
-//       </h2>
-//       <div className="pricing-table">
-//         <table>
-//           <tr>
-//             <th>Amount</th>
-//             <th>Processing</th>
-//             <th>Minimum</th>
-//             <th>Maximum</th>
-//           </tr>
-//           <tr>
-//             <td> NGN 0 - NGN 250, 000</td>
-//             <td>1.5% + 101</td>
-//             <td>NGN 11</td>
-//             <td>NGN 2, 001</td>
-//           </tr>
-//           <tr>
-//             <td> NGN 250, 000.01 +</td>
-//             <td>1.5% + 1000</td>
-//             <td> NGN 50</td>
-//             <td>NGN 5, 000</td>
-//           </tr>
-//         </table>
-//       </div>
-//     </div>
-//   );
-// }
+function pricing() {
+  return (
+    <>
+      {prices?.map((price, index) => (
+        <div className="pricing" key={index}>
+          <div className="pricing-content">
+            <p className="pricing-content__header">
+              <span>
+                <img src={price.image} alt="icon" />
+              </span>
+              {price.title}
+            </p>
+          </div>
 
-// export default Pricing;
+          <div className="pricing-content__title" key={index}>
+            {price.headers?.map((header, index) => (
+              <p
+                className="title"
+                key={index}
+                data-wide={price.headers.length < 4}
+              >
+                {header}
+              </p>
+            ))}
+          </div>
+
+          <div className="pricing-content__price">
+            {price.data?.map((amount, index) => (
+              <div className="pricing-content__price__data" key={index}>
+                {amount?.map((col, index) => (
+                  <p className="data" data-wide={amount.length < 4} key={index}>
+                    {col}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </>
+  );
+}
+
+export default pricing;
